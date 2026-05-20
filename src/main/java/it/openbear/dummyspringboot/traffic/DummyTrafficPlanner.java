@@ -1,6 +1,7 @@
 package it.openbear.dummyspringboot.traffic;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.ThreadLocalRandom;
 
 import org.springframework.http.HttpStatus;
