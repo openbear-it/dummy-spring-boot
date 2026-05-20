@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: dummy-spring-boot
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+
+app:
+  dummy-traffic:
+    delay:
+      min-ms: 75
+      max-ms: 900
+    weights:
+      ok: 60
+      accepted: 15
+      no-content: 10
+      bad-request: 7
+      not-found: 5
+      internal-error: 3

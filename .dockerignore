@@ -1,0 +1,30 @@
+# Version control
+.git
+.gitignore
+
+# CI/CD
+.github
+
+# IDE
+.idea
+.vscode
+*.iml
+
+# Maven build output (rebuilt inside Docker)
+target
+
+# Docs
+README.md
+*.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment / secrets
+.env
+*.env.local
